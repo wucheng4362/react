@@ -1,21 +1,28 @@
 {
-  "name": "learnreact",
+  "name": "test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@universe-design/react": "^2.16.2",
+    "@universe-design/styles": "^8.33.1",
+    "acorn": "^8.11.3",
+    "customize-cra-less-loader": "^2.0.0",
+    "fs": "^0.0.1-security",
+    "js-cookie": "^3.0.1",
+    "moment": "^2.29.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "redux": "^4.2.0",
+    "web-vitals": "^0.2.4",
+    "zustand": "^4.5.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +41,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "customize-cra": "^1.0.0",
+    "less-loader": "^12.2.0",
+    "react-app-rewired": "^2.2.1",
+    "typescript": "^4.4.4"
   }
 }

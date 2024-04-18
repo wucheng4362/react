@@ -1,17 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import ReactDOM from 'react-dom'
+// 引入组件
+// import App from './OtherArea'
+// import App1 from './App1'
+// ReactDOM.render(组件名称,要注入的元素
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// import ToDo from './ToDo.tsx'
+const acorn = require('acorn');
+const fs = require('fs');
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const code = fs.readFileSync('compiled.js', 'utf8');
+const ast = acorn.parse(code, { ecmaVersion: 2021 });
+
+console.log(ast);
+fs.writeFileSync('ast.json', JSON.stringify(ast, null, 2));
+
+
+// ReactDOM.render(
+//   <ToDo />,
+//   document.getElementById('root'))

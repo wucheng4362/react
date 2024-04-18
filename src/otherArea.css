@@ -1,0 +1,12 @@
+.container>div {
+    width: 500px;
+    height: 100px;
+    border: 1px solid black;
+    margin-top: 20px;
+
+}
+
+.container>button {
+    margin-top: 5px;
+    margin-left: 5px;
+}

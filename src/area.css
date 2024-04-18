@@ -1,0 +1,10 @@
+#txtEle {
+    resize: none;
+    width: 500px;
+    height: 100px;
+}
+
+.container>button {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}

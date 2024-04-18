@@ -1,0 +1,15 @@
+/* 公共的样式 */
+body {
+    background-color: #fff;
+}
+
+.todo-container {
+    width: 620px;
+    margin: 100px auto;
+}
+
+.todo-wrap {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
