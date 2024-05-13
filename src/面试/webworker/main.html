@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+   
+ele.addEventListener('click',()=>{
+    const myWorker = new Worker('./worker.js');
+    // 监听消息
+    myWorker.addEventListener('message', e => {
+    console.log(e.data);
+})
+const ele=document.getElementById('btn');
+// 发送消息
+myWorker.postMessage('Greeting from Main.js')
+})
+
+    </script>
+</head>
+<body>
+    <button id="btn">发送</button>
+</body>
+</html>
