@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/src/面试/test4.js",
+            "program": "${workspaceFolder}/src/机试/test.js",
             "runtimeExecutable": "/Users/bytedance/.nvm/versions/node/v18.19.0/bin/node"
         }
     ]
